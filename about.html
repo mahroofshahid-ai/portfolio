@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Mohammed Shahid Mahroof</title>
+  
+  <!-- Fonts: Syne for bold editorial typography, Inter for clean body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            accent: '#CCFF00', // Electric lime highlight
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Dark background grid pattern */
+    .bg-grid {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-sans antialiased selection:bg-accent selection:text-black">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 w-full z-50 mix-blend-difference px-6 py-6 flex justify-between items-center max-w-7xl mx-auto left-0 right-0">
+    <a href="index.html" class="font-display font-bold text-2xl tracking-tighter">Shahid<span class="text-accent">.</span></a>
+    
+    <nav class="hidden md:flex gap-8 text-xs font-mono uppercase tracking-widest text-neutral-400">
+      <a href="index.html" class="hover:text-accent transition-colors">[ HOME ]</a>
+      <a href="index.html#work" class="hover:text-accent transition-colors">[ WORK ]</a>
+      <a href="about.html" class="text-accent font-semibold">[ ABOUT ]</a>
+      <a href="index.html#contact" class="hover:text-accent transition-colors">[ CONTACT ]</a>
+    </nav>
+
+    <a href="index.html#contact" class="px-5 py-2 text-xs font-mono uppercase border border-neutral-700 rounded-full hover:bg-accent hover:text-black hover:border-accent transition-all duration-300">
+      [ BOOK NOW ]
+    </a>
+  </header>
+
+  <!-- MAIN ABOUT SECTION -->
+  <main class="min-h-screen pt-32 pb-20 px-6 max-w-7xl mx-auto bg-grid flex flex-col justify-between">
+    
+    <!-- Hero Title -->
+    <div class="mb-16">
+      <p class="font-mono text-xs text-neutral-400 mb-4 tracking-widest">[ ABOUT THE CREATOR ]</p>
+      <h1 class="font-display font-extrabold text-4xl md:text-6xl lg:text-7xl uppercase leading-[0.95] text-white">
+        Merging Creative Vision <br />
+        <span class="text-neutral-500">With Data-Driven Strategy.</span>
+      </h1>
+    </div>
+
+    <!-- Bio & Visual Layout -->
+    <div class="grid lg:grid-cols-12 gap-12 items-start mb-20">
+      
+      <!-- Bio Text -->
+      <div class="lg:col-span-7 space-y-6 text-neutral-300 text-sm md:text-base font-light leading-relaxed">
+        <p>
+          I'm <strong class="text-white font-medium">Mohammed Shahid Mahroof</strong>, a dual-threat video editor and digital marketing specialist. I bridge the gap between creative visual storytelling and technical search engine growth.
+        </p>
+        <p>
+          Most businesses struggle with either boring videos that don't convert or strategic marketing that lacks engaging content. I solve both by producing high-retention video assets—Reels, product showcases, and direct response ad creatives—while executing site audits, SEO optimization, and social media growth strategies to drive real metrics.
+        </p>
+        <p>
+          Whether shooting and editing dynamic brand content for platforms like <span class="text-accent font-mono">Fury Road Club</span> and <span class="text-accent font-mono">ScholEd</span>, or conducting comprehensive technical SEO audits and blog strategies for clients like <span class="text-accent font-mono">BSS Healthcare</span>, my goal remains the same: <strong class="text-white font-medium">turn audience attention into revenue</strong>.
+        </p>
+
+        <!-- Skill Pills -->
+        <div class="pt-6">
+          <p class="font-mono text-xs text-neutral-500 uppercase tracking-widest mb-4">[ CORE COMPETENCIES ]</p>
+          <div class="flex flex-wrap gap-2 font-mono text-xs">
+            <span class="px-3 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 text-neutral-300">Video Shooting & Editing</span>
+            <span class="px-3 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 text-neutral-300">Instagram Reels & Shorts</span>
+            <span class="px-3 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 text-neutral-300">Product Showcases</span>
+            <span class="px-3 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 text-neutral-300">Direct-Response Ads</span>
+            <span class="px-3 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 text-neutral-300">SEO & Technical Site Audits</span>
+            <span class="px-3 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 text-neutral-300">Content Scheduling & Copywriting</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image / Profile Block -->
+      <div class="lg:col-span-5">
+        <div class="aspect-[4/5] bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden relative group">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1000" alt="Mohammed Shahid Mahroof" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+          <div class="absolute bottom-4 left-4 right-4 font-mono text-xs text-neutral-300 flex justify-between items-center">
+            <span>[ MOHAMMED SHAHID MAHROOF ]</span>
+            <span class="text-accent">EST. 2026</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Career Milestones Timeline -->
+    <div class="border-t border-neutral-800 pt-16">
+      <p class="font-mono text-xs text-neutral-500 tracking-widest mb-8 uppercase">[ EXPERIENCE HIGHLIGHTS ]</p>
+      
+      <div class="space-y-8 font-mono text-xs">
+        
+        <!-- Experience 1 -->
+        <div class="grid md:grid-cols-12 gap-4 pb-6 border-b border-neutral-900">
+          <div class="md:col-span-3 text-accent">[ SCHOLED ]</div>
+          <div class="md:col-span-6 text-white font-sans font-medium text-sm">Content Creator & Video Editor</div>
+          <div class="md:col-span-3 text-neutral-500 md:text-right">Video Production & Teacher Schedules</div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="grid md:grid-cols-12 gap-4 pb-6 border-b border-neutral-900">
+          <div class="md:col-span-3 text-accent">[ FURY ROAD CLUB ]</div>
+          <div class="md:col-span-6 text-white font-sans font-medium text-sm">Freelance Video Producer</div>
+          <div class="md:col-span-3 text-neutral-500 md:text-right">Shooting, Editing & Social Media</div>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="grid md:grid-cols-12 gap-4 pb-6 border-b border-neutral-900">
+          <div class="md:col-span-3 text-accent">[ BSS HEALTHCARE ]</div>
+          <div class="md:col-span-6 text-white font-sans font-medium text-sm">Digital Marketer & SEO Specialist</div>
+          <div class="md:col-span-3 text-neutral-500 md:text-right">Website Audit, SEO & Blog Strategy</div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-neutral-800 bg-black py-12 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+      <a href="index.html" class="font-display font-bold text-xl tracking-tighter">Shahid<span class="text-accent">.</span></a>
+      <a href="mailto:mahroofshahid@gmail.com" class="font-mono text-xs text-neutral-400 hover:text-accent transition-colors">
+        mahroofshahid@gmail.com
+      </a>
+      <p class="font-mono text-xs text-neutral-500">Mohammed Shahid Mahroof © 2026</p>
+    </div>
+  </footer>
+
+</body>
+</html>
